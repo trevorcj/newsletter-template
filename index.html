@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body aria-disabled="false">
+    <meta charset="UTF-8" />
+    <title>Newsletter</title>
+    <style>
+      body {
+        font-family: "Sora", Arial, Helvetica, sans-serif;
+        background-color: #ffffff;
+        color: black;
+        /* text-align: center; */
+        margin: 40px;
+        padding: 0;
+      }
+
+      div img {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      h1,
+      h2,
+      p,
+      span {
+        text-align: left;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 40px;
+        font-weight: 900;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-top: 32px;
+        margin-bottom: 8px;
+      }
+
+      h2 {
+        font-size: 24px;
+        font-weight: 800;
+        margin: 40px 0;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 16px;
+        line-height: 30px;
+      }
+
+      a {
+        display: inline-block;
+        margin: 40px 0;
+        background-color: #9097f7;
+        color: #000;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #eaeaea;
+        margin: 32px 0;
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin: 16px 0;
+      }
+
+      .footer {
+        font-size: 12px;
+        margin-top: 48px;
+      }
+    </style>
+
+    <!-- dummy text for email validation -->
+
+    <p style="display: none; font-size: 1px; color: #ffffff">
+      MantaHQ Newsletter
+    </p>
+
+    <div style="text-align: left; margin-bottom: 40px; width: 40px">
+      <img src="logo.svg" alt="mantahq logo" width="40px" />
+    </div>
+
+    <!-- Header -->
+    <div>
+      <div style="text-align: center">
+        <img
+          src="banner.png"
+          aria-label="newsletter banner"
+          alt="mantahq newsletter banner"
+        />
+      </div>
+
+      <h1 style="margin-top: 60px">
+        Midweek Check-In: Catch Up With Us
+        <span
+          title="{{ first_name }}"
+          contenteditable="false"
+          data-placeholder="first_name"
+          class="placeholder rte-personalized-node fr-deletable"
+          >first_name</span
+        >
+      </h1>
+
+      <p style="color: #2c2c2c">
+        How about a sneak peek at what’s cooking at Manta?
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Intro -->
+    <div>
+      <p>
+        Hey Manta Maker 👋, <br />
+        <br />How’s your week going? We know midweeks can feel like “somewhere
+        between productive and please-send-coffee,” but we’ve got a fresh batch
+        of updates to brighten your inbox. Let’s dive right in!
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Updates -->
+    <div>
+      <div style="text-align: center">
+        <img src="updates.png" alt="mantahq updates banner" />
+      </div>
+      <h2>MantaHQ Now Supports Auth APIs</h2>
+      <p>
+        We just shipped something big! 🔥 <br />
+        <br />
+        Authentication APIs are now live on MantaHQ! You can now generate
+        sign-up and login endpoints in minutes, right from your table. No
+        backend code, no extra setup. <br /><br />
+
+        <span
+          >→ Want to protect your app’s content or onboard users properly?
+          MantaHQ’s got you covered.</span
+        >
+        <br />
+        <span>
+          → Want to stop copy-pasting mock auth logic? That’s in the past.
+        </span>
+      </p>
+      <a href="https://www.mantahq.com">Try the new Auth API flow →</a>
+    </div>
+
+    <hr />
+
+    <!-- tutorial -->
+    <div>
+      <h2>Tutorial of the week: Set Up Your First Workspace</h2>
+      <p>
+        Still figuring out how to get started with Manta? This short tutorial
+        walks you through: <br />
+        <br />
+        <span> → Creating your first workspace </span> <br />
+        <span> → Uploading a table </span> <br />
+        <span> → Instantly generating a working API </span> <br /><br />
+        Watch the 2-min guide here:
+      </p>
+      <a
+        href="https://www.loom.com/embed/600bf13a5869455a87e67993bc680b3d?sid=ee6a337d-e996-4c03-8fd6-77e5eae5a1b9"
+        >Creating a MantaHQ Workspace →</a
+      >
+    </div>
+
+    <hr />
+
+    <!-- Spotlight -->
+    <div>
+      <div style="text-align: center">
+        <img src="spotlight.png" alt="mantahq spotlight banner" />
+      </div>
+      <h2>Project Spotlight: PlastiTrack ♻️</h2>
+
+      <p>
+        Meet PlastiTrack, a web app that connects recyclers with plastic
+        collectors to make recycling easier. It solves the problem of plastic
+        waste mismanagement and empowers communities to recycle properly,
+        reducing pollution and promoting a cleaner environment. <br /><br />
+
+        <strong>Powered by:</strong> <br />
+        → MantaHQ (for backend & APIs) <br /><br />It was built during the
+        <strong>BuildJam : Build for Good Hackathon</strong> and we couldn’t be
+        prouder.
+      </p>
+      <a href="https://toluwalase007.github.io/plasti-track/"
+        >Explore how it works →</a
+      >
+    </div>
+
+    <hr />
+
+    <!-- Feedback -->
+    <div>
+      <h2>Got a minute? We’d love your feedback</h2>
+      <p>
+        <i
+          >Help us shape Manta to serve you better. Click the link below to tell
+          us what’s working, and what’s not.</i
+        >
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Follow -->
+
+    <div style="text-align: left">
+      <div style="text-align: center">
+        <img src="follow.png" alt="mantahq spotlight banner" />
+      </div>
+      <p>
+        Follow us and get the latest on new features, dev tips, and community
+        projects.
+      </p>
+      <a href="https://twitter.com/mantahq" style="margin: 10px 0">LinkedIn</a
+      ><br />
+      <a href="https://twitter.com/mantahq" style="margin: 10px 0"
+        >X (Twitter)</a
+      ><br />
+      <a href="https://twitter.com/mantahq" style="margin: 10px 0"
+        >Blog: For Tutorials</a
+      ><br />
+      <a href="https://www.mantahq.com" style="margin: 10px 0">Build with us</a>
+    </div>
+
+    <hr />
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        Thanks for building with Manta. We’ll be back next week with more
+        updates. Until then <i>#BuildWithManta</i> <br /><br />
+
+        — The MantaHQ Team
+      </p>
+    </div>
+  </body>
+</html>
